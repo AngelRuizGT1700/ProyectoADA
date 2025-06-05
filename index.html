@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio- MatrixCalc</title>
+    <link rel="stylesheet" href="frontend/src/styles/index.css" />
+    <script>
+      function changePage(operation) {
+        // Cambiar a la página de calculadora con el parámetro 'titulo' en la URL
+        window.location.href = `/frontend/src/pages/calculadora.html?titulo=${operation}`;
+      }
+
+      function sel() {
+        // Cambiar a la página de calculadora con el parámetro 'titulo' en la URL
+        window.location.href = `/frontend/src/pages/sel.html`;
+      }
+
+      function gjh() {
+        window.location.href = `/frontend/src/pages/gaussJordanHumano.html`;
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <section class="logo">
+        <a href="index.html">
+          <img src="/frontend/src/assets/svg/logoW.svg" alt="MatrixCalc-Logo" />
+        </a>
+      </section>
+      <section class="titulo">
+        <h2>INICIO</h2>
+      </section>
+    </header>
+    <main>
+      <section class="container-menu">
+        <h2>Funciones de Matrices</h2>
+        <p>Seleccione una función:</p>
+        <div class="menu">
+          <button onclick="changePage('Algoritmo Gauss-Jordan')">
+            Algoritmo Gauss-Jordan
+          </button>
+          <button onclick="sel('Sistema de Ecuaciones Líneales')">
+            Sistema de Ecuaciones Líneales
+          </button>
+          <button onclick="changePage('Matriz Inversa')">Matriz Inversa</button>
+          <button onclick="changePage('Determinante')">Determinante</button>
+          <button onclick="gjh('Gauss-Jordan Humanizado')">
+            Gauss-Jordan Humanizado
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Derechos reservados MatrixCalc©</p>
+    </footer>
+  </body>
+</html>
