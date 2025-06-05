@@ -1,4 +1,4 @@
-# Proyecto Álgebra Líneal
+# Proyecto Análisis de Algoritmos
 
 ### Tabla de Contenido
 
@@ -14,6 +14,11 @@
 
 ## Descripción
 
+Hacer una animación de uno de los algoritmos de cualquiera de las tres estrategias de diseño vistas en clase de análisis de algoritmos.
+-Divide y vencerás.
+-Algoritmos ávidos.
+-Programación dinámica.
+
 ## Características
 
 ## Requisitos Previos
@@ -28,7 +33,8 @@
 
 ## Autores
 
+Ruiz González Miguel Angel - AngelRuizGT1700 [<mruizg1900@alumno.ipn.mx.com>](mailto:mruizg1900@alumno.ipn.mx.com)
+
 ## Notas Adicionales
 
 Para ESCOM-IPN<sup>© :)</sup>
-# ProyectoADA

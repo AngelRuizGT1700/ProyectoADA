@@ -32,7 +32,7 @@ footer {
 /* ===== ENCABEZADO ===== */
 header {
   justify-content: space-between;
-  background-color: #323d42;
+  background-color: #3c3c3c;
   flex-direction: row;
   padding: 1rem;
   color: #fff;
@@ -54,13 +54,13 @@ header .titulo {
 }
 
 #titulo h2 {
-  font-size: 2vw;
+  font-size: 3vw;
   margin: 0;
 }
 
 /* ===== CONTENIDO PRINCIPAL ===== */
 main {
-  background-color: #38524c;
+  background-color: #7a7a7a;
   flex-direction: column;
   padding: 1.5rem;
   display: flex;
@@ -92,7 +92,7 @@ main {
 
 .menu button {
   transition: background-color 0.3s ease;
-  background-color: #323d42;
+  background-color: #545454;
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -109,7 +109,7 @@ main {
 }
 
 .menu button:hover {
-  background-color: #38524c;
+  background-color: #949494;
 }
 
 /* ===== PIE DE PÁGINA ===== */
@@ -200,7 +200,7 @@ footer {
   }
 
   header .titulo h2 {
-    font-size: 5vw;
+    font-size: 3vw;
   }
 
   main {
@@ -257,7 +257,7 @@ footer {
   }
 
   header .titulo h2 {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   main {
@@ -314,7 +314,7 @@ footer {
   }
 
   header .titulo h2 {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   main {
@@ -371,7 +371,7 @@ footer {
   }
 
   header .titulo h2 {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   main {

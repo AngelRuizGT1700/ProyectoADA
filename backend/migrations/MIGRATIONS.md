@@ -1,2 +1,0 @@
-# CARPETA MIGRATIONS
-Archivos que definen los cambios en la estructura de la base de datos a lo largo del tiempo. Las migraciones permiten gestionar el esquema de la base de datos de forma incremental.
