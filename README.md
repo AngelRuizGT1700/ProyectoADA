@@ -15,9 +15,10 @@
 ## Descripción
 
 Hacer una animación de uno de los algoritmos de cualquiera de las tres estrategias de diseño vistas en clase de análisis de algoritmos.
--Divide y vencerás.
--Algoritmos ávidos.
--Programación dinámica.
+
+1. Divide y vencerás.
+2. Algoritmos ávidos.
+3. Programación dinámica.
 
 ## Características
 
@@ -33,7 +34,7 @@ Hacer una animación de uno de los algoritmos de cualquiera de las tres estrateg
 
 ## Autores
 
-Ruiz González Miguel Angel - AngelRuizGT1700 [<mruizg1900@alumno.ipn.mx.com>](mailto:mruizg1900@alumno.ipn.mx.com)
+Ruiz González Miguel Angel - AngelRuizGT1700 - [<mruizg1900@alumno.ipn.mx.com>](mailto:mruizg1900@alumno.ipn.mx.com)
 
 ## Notas Adicionales
 
