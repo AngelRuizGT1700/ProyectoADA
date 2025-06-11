@@ -1,34 +1,3 @@
-/* ===== GENERAL ===== */
-* {
-  margin: 0;
-  padding: 0;
-  width: auto;
-}
-
-html {
-  overflow-x: hidden;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  justify-content: space-between;
-  background-color: #000000;
-  flex-direction: column;
-  align-items: center;
-  color: #303030;
-  display: flex;
-  width: 100vw;
-}
-
-header,
-main,
-footer {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 100vw;
-}
-
 /* ===== ENCABEZADO ===== */
 header {
   justify-content: space-between;
@@ -73,13 +42,22 @@ main {
   align-items: center;
   border-radius: 10px;
   display: flex;
-  padding: 1rem;
+  padding: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .container-menu h2 {
   font-size: 1.5rem;
   color: #000000;
-  margin: 5px;
+  margin: 5px 0 15px 0;
+  text-align: center;
+}
+
+.container-menu p {
+  color: #444;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .menu {
@@ -88,28 +66,80 @@ main {
   align-items: center;
   display: flex;
   width: 100%;
+  gap: 0.8rem;
 }
 
 .menu button {
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   background-color: #545454;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  border-radius: 5px;
-  padding: 10px 15px;
+  border-radius: 8px;
+  padding: 12px 20px;
   text-align: center;
-  margin-top: 10px;
   cursor: pointer;
   font-size: 1rem;
   color: #fff;
   border: none;
-  display: flex;
+  display: block;
   width: 100%;
+  position: relative;
 }
 
 .menu button:hover {
-  background-color: #949494;
+  background-color: #6d6d6d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu button .subtext {
+  display: block;
+  font-size: 0.75em;
+  margin-top: 4px;
+  color: #d3d3d3;
+  font-weight: 300;
+}
+
+.menu button:hover .subtext {
+  color: #fff;
+}
+
+.menu button::before {
+  content: attr(data-details);
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.85em;
+  width: 220px;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.menu button:hover::before {
+  opacity: 1;
+}
+
+/* Flecha del tooltip */
+.menu button::after {
+  content: "";
+  position: absolute;
+  bottom: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.menu button:hover::after {
+  opacity: 1;
 }
 
 /* ===== PIE DE PÁGINA ===== */
