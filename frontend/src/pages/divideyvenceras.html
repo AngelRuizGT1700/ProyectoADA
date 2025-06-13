@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Divide y vencerás - Visualizador</title>
+  <link rel="stylesheet" href="../styles/divide.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="../styles/divide.js" defer></script>
+</head>
+<body>
+  <header>
+    <section class="logo">
+      <a href="../../../index.html">
+        <img src="../assets/svg/logoTiburoncines.svg" alt="Tiburoncines-Logo" />
+      </a>
+    </section>
+    <section class="titulo">
+      <h2>Divide y vencerás</h2>
+    </section>
+  </header>
+  <main>
+  <a href="../../../index.html" id="backBtn" class="button">← Regresar al Inicio</a>
+  <section class="container-algoritmo">
+    <h3>Sube un archivo o ingresa un arreglo de números:</h3>
+    <div style="display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+      <input type="file" id="fileInput" accept=".txt,.csv" />
+      <button id="clearFileBtn" title="Vaciar archivo" 
+        style="cursor: pointer; background: transparent; border: none; font-size: 1.4rem; color: #004080;"
+        aria-label="Vaciar archivo">
+        🗑️
+      </button>
+    </div>
+    <textarea id="inputArray" rows="4" placeholder="Ejemplo: 4,8,15,16,23,42"></textarea>
+    <button id="startBtn">Iniciar animación</button>
+    
+    <div id="animationArea" tabindex="0" aria-live="polite" style="margin-top: 2rem;"></div>
+    
+    <!-- NUEVOS BOTONES Y ESTADÍSTICAS -->
+    <div style="margin-top: 1.5rem;">
+      <button id="resetBtn" style="display:none; margin-right: 0.5rem;">Reiniciar</button>
+      <button id="copyBtn" style="display:none; margin-right: 0.5rem;">Copiar arreglo</button>
+      <button id="downloadBtn" style="display:none;">Descargar TXT</button>
+    </div>
+    <div id="statsBox" style="margin-top: 1rem; font-weight: 600; color: #004080;"></div>
+  </section>
+</main>
+  <footer>
+    <p>Tiburoncines©, Derechos reservados.</p>
+  </footer>
+</body>
+</html>
+
